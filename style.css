@@ -1,0 +1,49 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 1rem 2rem 0 2rem;
+    font-size: 1.5rem;
+}
+
+.search-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+
+input{
+    padding: .5rem;
+}
+
+.user-cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    gap: .25rem;
+    margin-top: 1rem;
+}
+
+.card{
+    border: 1px solid black;
+    padding: .5rem;
+    background-color: #fff;
+    margin-bottom: .5rem;
+}
+
+.card > .header{
+    margin-bottom: .25rem;
+    font-size: 1.8rem;
+}
+
+.card > .body{
+    color: #777;
+}
+
+.hide{
+    display: none;
+}
