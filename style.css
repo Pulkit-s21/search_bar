@@ -19,17 +19,20 @@ body{
 
 input{
     padding: .5rem;
+    border-radius: .25rem;
 }
 
 .user-cards{
     display: grid;
+    /* auto-fill stays the same no matter if the content is there or not and in auto-fit the white space collapses and the remaining objects resize accordingly */
     grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
-    gap: .25rem;
+    gap: .5rem;
     margin-top: 1rem;
 }
 
 .card{
     border: 1px solid black;
+    border-radius: .25em;
     padding: .5rem;
     background-color: #fff;
     margin-bottom: .5rem;
@@ -38,6 +41,11 @@ input{
 .card > .header{
     margin-bottom: .25rem;
     font-size: 1.8rem;
+    transition: 200ms transform ease-in-out;
+}
+
+.card > .header:hover{
+    transform: scale(1.02);
 }
 
 .card > .body{
